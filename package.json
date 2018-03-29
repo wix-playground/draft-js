@@ -1,5 +1,5 @@
 {
-  "name": "draft-js",
+  "name": "@wix/draft-js",
   "description": "A React framework for building text editors.",
   "version": "0.10.5",
   "keywords": [
@@ -30,12 +30,14 @@
     "format": "eslint . --fix",
     "flow": "flow src",
     "test": "cross-env NODE_ENV=test jest",
-    "test-ci": "cross-env NODE_ENV=test npm run lint && npm run flow && npm run test"
+    "test-ci": "cross-env NODE_ENV=test npm run lint && npm run flow && npm run test",
+    "release": "wnpm-release --no-shrinkwrap"
   },
   "dependencies": {
     "fbjs": "^0.8.15",
     "immutable": "~3.7.4",
-    "object-assign": "^4.1.0"
+    "object-assign": "^4.1.0",
+    "wnpm-ci": "^6.2.54"
   },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0-rc || ^16.0.0-rc || ^16.0.0",
@@ -120,5 +122,9 @@
       "<rootDir>/node_modules/react/",
       "<rootDir>/node_modules/react-dom/"
     ]
+  },
+  "unpkg": true,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
