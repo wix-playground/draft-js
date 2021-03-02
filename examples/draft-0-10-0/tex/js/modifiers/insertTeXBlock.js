@@ -17,7 +17,7 @@
 import {
   AtomicBlockUtils,
   EditorState,
-} from 'draft-js';
+} from '@wix/draft-js';
 
 let count = 0;
 const examples = [

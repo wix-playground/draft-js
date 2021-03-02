@@ -12,7 +12,7 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import {convertFromRaw} from 'draft-js';
+import {convertFromRaw} from '@wix/draft-js';
 
 var rawContent = {
   blocks: [
