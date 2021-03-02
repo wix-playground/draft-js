@@ -11,14 +11,14 @@ import './DraftJsPlaygroundContainer.css';
 import {Controlled as CodeMirror} from 'react-codemirror2';
 import 'codemirror/lib/codemirror.css';
 import 'codemirror/mode/javascript/javascript';
-import 'draft-js/dist/Draft.css';
+import '@wix/draft-js/dist/Draft.css';
 import './App.css';
 import DraftJsRichEditorExample from './DraftJsRichEditorExample';
 import JSONTree from 'react-json-tree';
 import {convertToHTML} from 'draft-convert';
 import PanelGroup from 'react-panelgroup';
-import gkx from 'draft-js/lib/gkx';
-import convertFromHTMLModern from 'draft-js/lib/convertFromHTMLToContentBlocks2';
+import gkx from '@wix/draft-js/lib/gkx';
+import convertFromHTMLModern from '@wix/draft-js/lib/convertFromHTMLToContentBlocks2';
 
 import {
   ContentState,
@@ -26,7 +26,7 @@ import {
   convertFromHTML as convertFromHTMLClassic,
   convertToRaw,
   convertFromRaw,
-} from 'draft-js';
+} from '@wix/draft-js';
 
 const fromHTML = gkx('draft_refactored_html_importer')
   ? convertFromHTMLModern
