@@ -14,7 +14,7 @@
 
 'use strict';
 
-import {EditorState, Modifier, SelectionState} from 'draft-js';
+import {EditorState, Modifier, SelectionState} from '@wix/draft-js';
 
 export function removeTeXBlock(editorState, blockKey) {
   var content = editorState.getCurrentContent();
