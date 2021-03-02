@@ -14,7 +14,7 @@
 
 'use strict';
 
-import Draft from 'draft-js';
+import Draft from '@wix/draft-js';
 import {Map} from 'immutable';
 import React from 'react';
 

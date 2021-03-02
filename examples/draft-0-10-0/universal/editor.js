@@ -11,7 +11,7 @@
 
 'use strict';
 
-const Draft = require('draft-js');
+const Draft = require('@wix/draft-js');
 const React = require('react');
 
 class SimpleEditor extends React.Component {

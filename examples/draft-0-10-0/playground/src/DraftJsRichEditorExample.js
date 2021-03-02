@@ -8,7 +8,7 @@
 
 import React, {Component} from 'react';
 
-import {Editor, RichUtils, getDefaultKeyBinding} from 'draft-js';
+import {Editor, RichUtils, getDefaultKeyBinding} from '@wix/draft-js';
 
 import './DraftJsRichEditorExample.css';
 
